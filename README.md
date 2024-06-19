@@ -1,12 +1,11 @@
 # Moon events
-A python application that displays the dates of moon events that have a strong effect on tides
-* Distance to the earth (Perigee/Apogee)
-* Position relative to the earth and sun (Full/New moon)
+A python application that displays the dates of moon events of the next 3 months that have an effect on tides. Tides are usually more extreme during perigee (when the moon is closest to the earth) as well as during full and new moon. Tides are usually less extreme during apogee (when the moon is farthest from the earth).
+The application is deployed on streamlit and the user can choose a custom start date to display a different 3-month timeframe.
 
 [moonevents.streamlit.app](https://moonevents.streamlit.app/)
 
 
 ### Calculations
-The python app uses [NASA's Horizons API](https://ssd-api.jpl.nasa.gov/doc/horizons.html)
-* to determine the days of Perigee/Apogee based on the distance of the moon to the earth
-* and to determine lunar phases based on the brightness of the moon
+The python app uses [NASA's JPL Horizons API](https://ssd-api.jpl.nasa.gov/doc/horizons.html)
+* Perigee/Apogee are calculated based on the distance of the moon to the earth
+* Lunar phases are calculated based on the brightness of the moon
