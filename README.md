@@ -9,3 +9,6 @@ The application is deployed on streamlit and the user can choose a custom start 
 The python app uses [NASA's JPL Horizons API](https://ssd-api.jpl.nasa.gov/doc/horizons.html)
 * Perigee/Apogee are calculated based on the distance of the moon to the earth
 * Lunar phases are calculated based on the brightness of the moon
+
+### Files
+**moon.py** is the basic python code for the calculations and creation of a dataframe, which is then integrated into **moon_streamlit.py**
