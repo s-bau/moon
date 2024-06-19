@@ -12,12 +12,18 @@ import streamlit as st
 
 def main():
     
-    st.title("Moon events") 
+    st.title("Moon and tides")
+    st.write("Dates of moon events of the next 3 months that have an effect on tides.\
+             Tides are usually more extreme during perigee (when the moon is closest to the earth)\
+             as well as during full and new moon.\
+             Tides are usually less extreme during apogee (when the moon is farthest from the earth).")
 
     # layout: container
     c = st.container()
 
-    start = st.date_input("Choose a different start date") 
+    start = st.date_input("Choose a different start date")
+    st.write("") 
+    st.write("The dates are calculated using NASA's [JPL Horizons](https://ssd.jpl.nasa.gov/horizons/) solar system data.")
     df_moon = moon(start)
     c.dataframe(df_moon)
 
