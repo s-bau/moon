@@ -27,10 +27,10 @@ def main():
 def moon(start):
     # set default timeframe to now until 14 weeks from today
     # add 1 day on each end for calculations that require comparison with previous/preceeding values
-    start = datetime.today() - timedelta(days=1)
-    start = start.strftime("%Y-%m-%d")
-    stop = datetime.now() + timedelta(weeks=14) + timedelta(days=1)
+    stop = start + timedelta(weeks=14) + timedelta(days=1)
     stop = stop.strftime("%Y-%m-%d")
+    start = start - timedelta(days=1)
+    start = start.strftime("%Y-%m-%d")
 
     # Define API URL for moon, chosen date, deldot info (distance for perigee/apogee), apmag (brightness for full/new moon) 
     url = (
