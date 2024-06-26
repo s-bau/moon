@@ -2,7 +2,7 @@
 A python application that displays the dates of moon events of the next 3 months that have an effect on tides. Tides are usually more extreme during perigee (when the moon is closest to the earth) as well as during full and new moon. Tides are usually less extreme during apogee (when the moon is farthest from the earth).
 The application is deployed on streamlit and the user can choose a custom start date to display a different 3-month timeframe.
 
-<img src=screenshot.jpg>
+<img src=screenshot_streamlit.jpg>
 
 [moonevents.streamlit.app](https://moonevents.streamlit.app/)
 
