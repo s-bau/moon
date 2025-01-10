@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "moon"
+version = "0.1.0"
+description = "An application that monitors moon phases and other events that have a strong effect on tides"
+authors = ["BAUMANN SOPHIE <sophie.b.baumann@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.3"
+streamlit = "^1.41.1"
+requests = "^2.32.3"
+numpy = "^2.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
